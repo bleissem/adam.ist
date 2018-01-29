@@ -1,4 +1,3 @@
-rename build.sh build.bat
-cmd /C build.bat 
-del build.bat
-git checkout build.sh
+CMD /c npm install
+CMD /c ng build --prod --output-path docs --base-href=.
+CMD /c git checkout docs/CNAME
