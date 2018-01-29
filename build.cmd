@@ -1,3 +1,4 @@
 rename build.sh build.bat
-cmd /k build.bat 
-rename build.bat build.sh
+cmd /C build.bat 
+del build.bat
+git checkout build.sh
