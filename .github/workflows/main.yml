@@ -16,7 +16,7 @@ jobs:
     - name: Publish app
       run: dotnet publish -c Release
     - name: ls 
-      run: cd ${{ env.PUBLISH_DIR }} && ls
+      run: cd ./${{ env.PUBLISH_DIR }} && ls
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
