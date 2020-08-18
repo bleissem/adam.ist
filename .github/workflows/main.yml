@@ -18,11 +18,11 @@ jobs:
     - name: ls 
       run: ls
     - name: ls 
-      run: cd ./${{ env.PUBLISH_DIR }} && ls
+      run: cd ./src/${{ env.PUBLISH_DIR }} && ls
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
-        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        html_path: ./src/${{ env.PUBLISH_DIR }}/index.html
         base_href: /BlazorOnGitHubPages/
 
     - name: GitHub Pages
